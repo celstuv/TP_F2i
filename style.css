@@ -5,13 +5,13 @@
 }
 
 body {
-  background-color: #c68642;
+  background-color: #c68642;*/
   font-family: ProximaNova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
 }
 
 .container {
-  background-color: grey;
+  /*background-color: grey;*/
   width: 1400px;
   margin:0 auto;
 
@@ -24,6 +24,7 @@ div>.blocGrangeImage,
 .videoTshirt,
 .articles,
 .newsletter,
+.row,
 footer>.haut,
 footer>.haut>.droite,
 footer>.bas {
@@ -34,16 +35,18 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  background: crimson;
-}
+
 
 /*****Nav-bar******/
 header {
-  background-color: violet;
+  /*background-color: violet;*/
   align-items: center;
   justify-content: space-between;
   padding: 35px;
+}
+
+.logo {
+  background: crimson;
 }
 
 header nav {
@@ -108,6 +111,14 @@ ul img {}
   border : 1px solid;
 }
 
+/*gallery image 2*/
+.col {
+  background-color:coral;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  padding:10px;
+}
+
 /*Grid 1*/
 .grid-container {
   display: grid;
@@ -115,18 +126,20 @@ ul img {}
   grid-template-columns: auto auto auto;
   background-color: #2196F3;
   padding: 0px;
+
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 10px;
+  padding: 0px;
   font-size: 30px;
   text-align: center;
 }
 
 .grid-item img {
-  width: 50%;
+  width: 30%;
+  padding: 0;
 }
 
 .defile {
