@@ -16,6 +16,11 @@ body {
   margin: 0 auto;
 }
 
+h1, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 header,
 nav,
 div>.row-petite_image,
@@ -37,12 +42,12 @@ a {
 }
 
 a:hover {
-color: #0072c9;
+  color: #0072c9;
 }
 
 span {
-  color: rgba(255,255,255,0.7);
-  font-size : 15px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
 }
 
 /*****Nav-bar******/
@@ -95,8 +100,11 @@ nav .network li {
 }
 
 /*****Section gallery image******/
-.containerBloc {}
+.containerBloc {
+  min-height: 1300px;
+}
 
+/*La grande image*/
 .blocGrangeImage {
   background-image: url('images/style-post-fresh-inspiration-for-springtime-5783277f.webp');
   background-size: cover;
@@ -108,7 +116,7 @@ nav .network li {
 }
 
 .blocText {
-  position: absolute;
+  position: absolute;  /*pour ajuster le texte*/
   left: 70px;
   bottom: 65px;
   width: 500px;
@@ -117,36 +125,52 @@ nav .network li {
 .blocText h1 {
   font-size: 70px;
   line-height: 75px;
-  font-family: 'Montserrat', sans-serif;
-  color: rgba(255,255,255,0.85);
-  margin-top : 10px
+  margin-top: 10px
+}
+
+/*Les 3 petites images*/
+.row-petite_image {
+  justify-content: center;
+}
+
+.bloc {
+  position: relative; /*pour ajuster le texte*/
+  width: 500px;
+  height: 450px;
 }
 
 .Img1 {
   background-image: url('images/style-post-bella-york-presents-her-new-collection-teaser-bg-square-f37c6806.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 730px;
+  height: 450px;
 }
 
-.blocText h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: rgba(255,255,255,0.85);
-  margin-top : 10px
+.Img2 {
+  background-image: url('images/music-post-simon-scott-the-new-album-is-out-now-teaser-bg-square-2deeb0ed.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
 }
 
-.row-petite_image {
-  background-color: lightblue;
-  justify-content: center;
+.Img3 {
+  background-image: url('images/style-post-oni-jericho-the-new-collection-teaser-bg-square-ccf747da.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
 }
 
-.bloc {
-  background-color: lightcyan;
-  position: relative;
-  width: 500px;
-  height: 300px;
-  border: 1px solid;
+.blocTextImg {
+  position: absolute;
+  left: 70px;
+  bottom: 65px;
+  width: 350px;
+}
+
+.blocTextImg h3 {
+  margin-top: 10px;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 /*gallery image 2*/
