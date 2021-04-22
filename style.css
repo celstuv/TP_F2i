@@ -177,16 +177,17 @@ nav .network li {
 
 /*********gallery image 2**********/
 .container-articles {
-  margin-top : 100px;
+  margin-top: 100px;
 }
+
 .row-articles {
   display: flex;
   flex-flow: row wrap;
 }
 
 /*La 1ere colonne*/
-.colImage {
-}
+.colImage {}
+
 .colImage span {
   color: #ef454a;
   font-size: 45px;
@@ -200,14 +201,14 @@ nav .network li {
 }
 
 .colImage img {
-  margin-top:170px;
-  margin-bottom:0;
+  margin-top: 170px;
+  margin-bottom: 0;
 }
 
 /*les 8 autres colonnes*/
 .imgText, .image img {
-  width : 466.66px;
-  margin-bottom : 15px;
+  width: 466.66px;
+  margin-bottom: 15px;
 }
 
 .text {
@@ -215,13 +216,13 @@ nav .network li {
 }
 
 .text span {
-  color : #a1a1a1;
-  font-size : 18px;
+  color: #a1a1a1;
+  font-size: 18px;
 }
 
 .text h3 {
   font-size: 25px;
-  margin-top : 15px;
+  margin-top: 15px;
   margin-bottom: 15px
 }
 
@@ -235,8 +236,6 @@ nav .network li {
 }
 
 /*section defile*/
-
-
 .defile {
   background-image: url('images/admin-ajax.webp');
   background-size: cover;
@@ -250,13 +249,40 @@ nav .network li {
   background-image: url('images/style-post-union-presents-the-new-collection-sponsored.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: space-around;
-  align-items: center;
+  position: relative;
+  min-height: 390px;
+  width: 530px;
+  margin-left : 95px;
 }
 
-.union, .texteGrid {
-  min-height: 370px;
-  width: 630px;
+.texteGrid {
+  position: relative;
+  left: 200px;
+  min-height: 170px;
+  width: 430px;
+}
+
+.texteGrid h3 {
+  font-size: 43px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.link a {
+  font-size: 17px;
+  text-decoration: underline;
+  color: #fff;
+  weight: 400px;
+}
+
+.textRotate {
+  -webkit-transform: rotate(271deg);
+  -moz-transform: rotate(271deg);
+  -o-transform: rotate(271deg);
+  writing-mode: lr-tb;
+  position: relative;
+  left: 70px;
+  color: #fff;
 }
 
 .videoTshirt {
