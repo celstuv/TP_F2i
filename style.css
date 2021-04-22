@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-h1, h3 {
+h1, h2 {
   font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -116,7 +116,8 @@ nav .network li {
 }
 
 .blocText {
-  position: absolute;  /*pour ajuster le texte*/
+  position: absolute;
+  /*pour ajuster le texte*/
   left: 70px;
   bottom: 65px;
   width: 500px;
@@ -134,7 +135,8 @@ nav .network li {
 }
 
 .bloc {
-  position: relative; /*pour ajuster le texte*/
+  position: relative;
+  /*pour ajuster le texte*/
   width: 500px;
   height: 450px;
 }
@@ -163,56 +165,98 @@ nav .network li {
 .blocTextImg {
   position: absolute;
   left: 70px;
-  bottom: 65px;
+  bottom: 50px;
   width: 350px;
 }
 
-.blocTextImg h3 {
+.blocTextImg h2 {
   margin-top: 10px;
   font-size: 32px;
   line-height: 38px;
 }
 
-/*gallery image 2*/
-.col {
-  background-color: coral;
-  flex-flow: row-reverse wrap;
-  justify-content: center;
-  padding: 10px;
+/*********gallery image 2**********/
+.container-articles {
+  margin-top : 100px;
+}
+.row-articles {
+  display: flex;
+  flex-flow: row wrap;
 }
 
-/*Grid 1*/
-.grid-container {
-  display: grid;
-  grid-column-gap: 0px;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 0px;
+/*La 1ere colonne*/
+.colImage {
+}
+.colImage span {
+  color: #ef454a;
+  font-size: 45px;
 }
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 0px;
-  font-size: 30px;
-  text-align: center;
+.collImage h3 {
+  font-size: 5em;
+  color: #373737;
+  margin: 0 0 20px 0;
+  line-height: 50px;
 }
 
-.grid-item img {
-  width: 30%;
-  padding: 0;
+.colImage img {
+  margin-top:170px;
+  margin-bottom:0;
 }
+
+/*les 8 autres colonnes*/
+.imgText, .image img {
+  width : 466.66px;
+  margin-bottom : 15px;
+}
+
+.text {
+  margin: 20px;
+}
+
+.text span {
+  color : #a1a1a1;
+  font-size : 18px;
+}
+
+.text h3 {
+  font-size: 25px;
+  margin-top : 15px;
+  margin-bottom: 15px
+}
+
+.text h3:hover {
+  color: #777777;
+}
+
+.text p {
+  color: #777777;
+  font-size: 20px;
+}
+
+/*section defile*/
+
 
 .defile {
-  background-color: floralwhite;
+  background-image: url('images/admin-ajax.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
   justify-content: space-around;
   align-items: center;
-  min-height: 350px;
+  height: 622.7px;
+}
+
+.union {
+  background-image: url('images/style-post-union-presents-the-new-collection-sponsored.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .union, .texteGrid {
-  min-height: 350px;
-  width: 350px;
+  min-height: 370px;
+  width: 630px;
 }
 
 .videoTshirt {
