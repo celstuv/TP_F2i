@@ -1,23 +1,28 @@
-*, *::before, *:after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
 }
 
+*::before, *::after {}
+
 body {
   /*background-color: #c68642;*/
-  font-family: 'ProximaNova', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
   color: #323232;
+  background-image: url('images/page-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container {
-  /*background-color: grey;*/
   width: 1400px;
   margin: 0 auto;
+  background-color: white;
 }
 
 h1, h2 {
-  font-family: 'Montserrat', sans-serif;
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -31,8 +36,7 @@ div>.blocGrangeImage,
 .newsletter,
 .row,
 footer>.haut,
-footer>.haut>.droite,
-footer>.bas {
+footer>.haut>.droite {
   display: flex;
 }
 
@@ -63,7 +67,7 @@ header {
 
 .logo {
   position: relative;
-  left: 4px;
+  left: 1px;
 }
 
 header nav {
@@ -112,7 +116,6 @@ nav .network li {
   background-position: center;
   height: 730px;
   position: relative;
-  align-items: flex-end;
 }
 
 .blocText {
@@ -130,43 +133,32 @@ nav .network li {
 }
 
 /*Les 3 petites images*/
-.row-petite_image {
-  justify-content: center;
-}
-
 .bloc {
   position: relative;
   /*pour ajuster le texte*/
-  width: 500px;
+  width: 33.33%;
   height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .Img1 {
   background-image: url('images/style-post-bella-york-presents-her-new-collection-teaser-bg-square-f37c6806.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
 }
 
 .Img2 {
   background-image: url('images/music-post-simon-scott-the-new-album-is-out-now-teaser-bg-square-2deeb0ed.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
 }
 
 .Img3 {
   background-image: url('images/style-post-oni-jericho-the-new-collection-teaser-bg-square-ccf747da.webp');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 450px;
 }
 
 .blocTextImg {
   position: absolute;
   left: 70px;
   bottom: 50px;
-  width: 350px;
+  width: 370px;
 }
 
 .blocTextImg h2 {
@@ -175,7 +167,7 @@ nav .network li {
   line-height: 38px;
 }
 
-/*********gallery image 2**********/
+/*********Grille image 1**********/
 .container-articles {
   margin-top: 100px;
 }
@@ -185,16 +177,24 @@ nav .network li {
   flex-flow: row wrap;
 }
 
+/*L'unique colonne*/
+.colImage {
+  background-image: url('images/Capture d’écran 2021-04-22 192233.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 33.33%;
+}
+
 /*La 1ere colonne*/
 .colImage span {
   color: #ef454a;
   font-size: 45px;
 }
 
-.collImage h3 {
-  font-size: 5em;
+.colImage h3 {
+  font-size: 45px;
   color: #373737;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 50px;
   line-height: 50px;
 }
 
@@ -235,7 +235,7 @@ nav .network li {
 
 /*section defile*/
 .defile {
-  background-image: url('images/admin-ajax.webp');
+  background-image: url('images/style-post-union-presents-the-new-collection-sponsored-bg-1125045e.webp');
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-around;
@@ -247,15 +247,13 @@ nav .network li {
   background-image: url('images/style-post-union-presents-the-new-collection-sponsored.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   min-height: 390px;
   width: 530px;
-  margin-left: 95px;
 }
 
 .texteGrid {
   position: relative;
-  left: 200px;
+  left: 170px;
   min-height: 170px;
   width: 430px;
 }
@@ -284,12 +282,8 @@ nav .network li {
   color: #fff;
 }
 
-/**** l'image du défilé***/
 .discover {
-  margin-left: 80px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  ;
+  margin: 80px 0px 80px 27px;
 }
 
 /****La 2eme grid* ***/
@@ -301,13 +295,17 @@ nav .network li {
 .border {
   display: flex;
   flex-flow: row wrap;
-  padding-top: 40px;
+  margin: 30px 80px 0 60px;
   border-bottom: 1px solid #cccccc;
+}
+
+.border:last-child {
+  border: none;
 }
 
 /*les 8 autres colonnes*/
 .imgText2, .image2 img {
-  width: 466.66px;
+  width: 406.66px;
   height: 241.64;
   margin-bottom: 15px;
 }
@@ -322,7 +320,7 @@ nav .network li {
 }
 
 .text2 h3 {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 15px;
   margin-bottom: 15px
 }
@@ -336,7 +334,7 @@ nav .network li {
   font-size: 25px;
 }
 
-/****Zone de vidéo ***/
+/****Zone de vidéo***/
 .videoTshirt {
   background-color: #e5e5e5;
   justify-content: space-around;
@@ -352,61 +350,38 @@ nav .network li {
   min-height: 200px;
 }
 
-.textVideo {
-  position: relative;
-  left: 140px;
-  min-height: 170px;
-  width: 430px;
-}
-
-.textVideo h3 {
-  font-size: 43px;
-  line-height: 50px;
-  color: #373737;
-  margin-bottom: 20px;
-}
-
-.textRotateVideo {
-  -webkit-transform: rotate(271deg);
-  -moz-transform: rotate(271deg);
-  -o-transform: rotate(271deg);
-  writing-mode: lr-tb;
-  position: relative;
-  left: 70px;
+.videoTshirt .texteGrid h3,
+.videoTshirt .texteGrid a,
+.videoTshirt .textRotate {
   color: #373737;
 }
 
-.textVideo a {
-  color: #373737;
-}
-
-/****Liste d'articles*****/
-.articles {
+/****articles et sponsored*****/
+.articlesPopularSponsored {
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.articles h4 {
-  font-size: 25px;
-  margin-bottom: 30px;
+  justify-content: space-around;
+  margin: 100px 55px 100px 55px;
 }
 
 .popular, .sponsored {
-  justify-content: center;
-  min-height: 400px;
+  justify-content: space-around;
+}
+
+.articlesPopularSponsored h4 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .article {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  width: 600px;
+  width: 550px;
 }
 
-/*Permet de cicler la 2eme ligne de la liste*/
-.article:nth-child(2n+1) {
+/*Permet de cibler la 2eme ligne de la liste*/
+.article:nth-child(3) {
   margin-top: 30px;
   margin-bottom: 30px;
   padding-top: 20px;
@@ -417,6 +392,7 @@ nav .network li {
 
 .textArticle {
   width: 400px;
+  margin-left: 20px;
 }
 
 .textArticle span {
@@ -425,6 +401,8 @@ nav .network li {
 }
 
 .textArticle p {
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 12px;
 }
 
@@ -432,15 +410,15 @@ nav .network li {
 .newsletter {
   min-height: 80px;
   padding: 50px;
-  background-color: #0072c9
+  background-color: #0072c9;
+  display: flex;
+  align-items: center;
 }
 
 .newsletter h2 {
   font-size: 25px;
   line-height: 33px;
   margin-left: 65px;
-  display: flex;
-  align-items: center;
 }
 
 form {
@@ -469,31 +447,31 @@ input::placeholder {
   right: 50px;
 }
 
-
-/****Footer*/
+/****Footer****/
 footer {
-  padding: 40px;
+  padding-top: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
-footer .haut, .bas {
-  justify-content: space-around;
-  align-items: center;
-  min-height: 150px;
-  padding: 20px;
+footer .haut {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 150px;
 }
 
 .textFooter p {
-  font-size: 30px;
-  line-height: 33px;
-  margin-top : 50px;
+  font-size: 27px;
+  margin-top: 50px;
 }
 
 footer .gauche, .droite {
   width: 500px;
-  height: 300px;
+  /*margin-bottom :50px;*/
 }
 
-footer h6 {
+footer h5 {
   font-size: 25px;
   margin-bottom: 70px;
 }
@@ -503,32 +481,29 @@ footer .droite {
   justify-content: space-around;
 }
 
-footer ul {
+.categorie, .explore {
+  align-items: flex-start;
+}
+
+footer ul li {
   list-style: none;
-}
-/*Céline pb avec div bas qui commence 20px à gauche*/
-.reseauxsociauxFooter{
-background: red;
-margin : 0;
-}
-.copyright{
-  background: yellow;
+  padding-bottom: 20px;
 }
 
-footer .network {
+footer .bas {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
-footer .network li {
-  margin-left : 0px;
+.footer h6 {
+  font-size: 20px;
 }
 
 footer li a {
   text-decoration: none;
   margin-top: 20px;
   font-size: 20px;
-  color: #a1a1a1; /*#323232*/
+  color: #a1a1a1;
 }
 
 footer li a:hover {
