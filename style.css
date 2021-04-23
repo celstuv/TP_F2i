@@ -186,8 +186,6 @@ nav .network li {
 }
 
 /*La 1ere colonne*/
-.colImage {}
-
 .colImage span {
   color: #ef454a;
   font-size: 45px;
@@ -252,7 +250,7 @@ nav .network li {
   position: relative;
   min-height: 390px;
   width: 530px;
-  margin-left : 95px;
+  margin-left: 95px;
 }
 
 .texteGrid {
@@ -266,6 +264,7 @@ nav .network li {
   font-size: 43px;
   line-height: 50px;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .link a {
@@ -285,36 +284,195 @@ nav .network li {
   color: #fff;
 }
 
+/**** l'image du défilé***/
+.discover {
+  margin-left: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  ;
+}
+
+/****La 2eme grid* ***/
+.row-articles {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.border {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 40px;
+  border-bottom: 1px solid #cccccc;
+}
+
+/*les 8 autres colonnes*/
+.imgText2, .image2 img {
+  width: 466.66px;
+  height: 241.64;
+  margin-bottom: 15px;
+}
+
+.text2 {
+  margin: 20px;
+}
+
+.text2 span {
+  color: #a1a1a1;
+  font-size: 18px;
+}
+
+.text2 h3 {
+  font-size: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px
+}
+
+.text2 h3:hover {
+  color: #777777;
+}
+
+.text2 p {
+  color: #777777;
+  font-size: 25px;
+}
+
+/****Zone de vidéo ***/
 .videoTshirt {
-  background-color: #ff6800;
+  background-color: #e5e5e5;
   justify-content: space-around;
   align-items: center;
-  min-height: 350px;
+  min-height: 550px;
+}
+
+.containerVideoTshirt {
+  margin-left: 55px;
 }
 
 .textVideo {
   min-height: 200px;
 }
 
+.textVideo {
+  position: relative;
+  left: 140px;
+  min-height: 170px;
+  width: 430px;
+}
+
+.textVideo h3 {
+  font-size: 43px;
+  line-height: 50px;
+  color: #373737;
+  margin-bottom: 20px;
+}
+
+.textRotateVideo {
+  -webkit-transform: rotate(271deg);
+  -moz-transform: rotate(271deg);
+  -o-transform: rotate(271deg);
+  writing-mode: lr-tb;
+  position: relative;
+  left: 70px;
+  color: #373737;
+}
+
+.textVideo a {
+  color: #373737;
+}
+
+/****Liste d'articles*****/
 .articles {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.articles h4 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.popular, .sponsored {
   justify-content: center;
   min-height: 400px;
 }
 
 .article {
-  background-color: blueviolet;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 600px;
-  border: 1px solid;
 }
 
-div .newsletter {
+/*Permet de cicler la 2eme ligne de la liste*/
+.article:nth-child(2n+1) {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+}
+
+.textArticle {
+  width: 400px;
+}
+
+.textArticle span {
+  color: #a1a1a1;
+  font-size: 15px;
+}
+
+.textArticle p {
+  margin-bottom: 12px;
+}
+
+/****Newsletter****/
+.newsletter {
   min-height: 80px;
-  justify-content: center;
   padding: 50px;
+  background-color: #0072c9
 }
 
+.newsletter h2 {
+  font-size: 25px;
+  line-height: 33px;
+  margin-left: 65px;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  margin-left: 30px;
+}
+
+input[type="email"] {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  width: 740px;
+  height: 34px;
+}
+
+input::placeholder {
+  color: #7eb8e4;
+  padding-left: 8px;
+  font-size: 17px;
+}
+
+.form img {
+  width: 30px;
+  position: relative;
+  right: 50px;
+}
+
+
+/****Footer*/
 footer {
-  background-color: #99d5ff padding: 50px;
+  padding: 40px;
 }
 
 footer .haut, .bas {
@@ -324,11 +482,55 @@ footer .haut, .bas {
   padding: 20px;
 }
 
-footer .gauche, .droite {
-  width: 500px;
-  height: 200px;
+.textFooter p {
+  font-size: 30px;
+  line-height: 33px;
+  margin-top : 50px;
 }
 
-.logo {}
+footer .gauche, .droite {
+  width: 500px;
+  height: 300px;
+}
 
-.nav {}
+footer h6 {
+  font-size: 25px;
+  margin-bottom: 70px;
+}
+
+footer .droite {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  list-style: none;
+}
+/*Céline pb avec div bas qui commence 20px à gauche*/
+.reseauxsociauxFooter{
+background: red;
+margin : 0;
+}
+.copyright{
+  background: yellow;
+}
+
+footer .network {
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .network li {
+  margin-left : 0px;
+}
+
+footer li a {
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #a1a1a1; /*#323232*/
+}
+
+footer li a:hover {
+  color: #d0d0d0;
+}
