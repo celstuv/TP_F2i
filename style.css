@@ -1,29 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 *::before, *::after {}
 
+
 body {
   /*background-color: #c68642;*/
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif";
-  color: #323232;
+  /* color: #323232; */
   background-image: url('images/page-bg.svg');
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .container {
   width: 1400px;
   margin: 0 auto;
   background-color: white;
-}
-
-h1, h2 {
-  color: rgba(255, 255, 255, 0.85);
 }
 
 header,
@@ -40,6 +37,19 @@ footer>.haut>.droite {
   display: flex;
 }
 
+h1, h2 {
+  color: #FFFFFFD9;
+}
+
+h3 {
+  color: #373737;
+}
+
+span {
+  color: #a1a1a1;
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
   color: #323232;
@@ -49,11 +59,9 @@ a:hover {
   color: #0072c9;
 }
 
-span {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 15px;
+p {
+  text-align: justify;
 }
-
 /*****Nav-bar******/
 header {
   background-color: white;
@@ -73,17 +81,12 @@ header {
 header nav {
   display: flex;
   align-items: center;
-  right: 13em;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
-}
-
-nav li {
-  display: inline;
 }
 
 nav .menu {
@@ -112,34 +115,29 @@ nav .network li {
 .blocGrangeImage {
   background-image: url('images/style-post-fresh-inspiration-for-springtime-5783277f.webp');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   height: 730px;
-  position: relative;
 }
 
 .blocText {
-  position: absolute;
-  /*pour ajuster le texte*/
-  left: 70px;
-  bottom: 65px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
   width: 500px;
+  margin: 50px;
 }
 
 .blocText h1 {
   font-size: 70px;
   line-height: 75px;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
 /*Les 3 petites images*/
 .bloc {
-  position: relative;
-  /*pour ajuster le texte*/
   width: 33.33%;
   height: 450px;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .Img1 {
@@ -155,10 +153,11 @@ nav .network li {
 }
 
 .blocTextImg {
-  position: absolute;
-  left: 70px;
-  bottom: 50px;
-  width: 370px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  width: 460px;
+  padding: 0 0 50px 50px;
 }
 
 .blocTextImg h2 {
@@ -177,7 +176,7 @@ nav .network li {
   flex-flow: row wrap;
 }
 
-/*L'unique colonne*/
+/*La 1ere colonne*/
 .colImage {
   background-image: url('images/Capture d’écran 2021-04-22 192233.png');
   background-repeat: no-repeat;
@@ -185,7 +184,6 @@ nav .network li {
   width: 33.33%;
 }
 
-/*La 1ere colonne*/
 .colImage span {
   color: #ef454a;
   font-size: 45px;
@@ -193,7 +191,6 @@ nav .network li {
 
 .colImage h3 {
   font-size: 45px;
-  color: #373737;
   margin: 0 0 20px 50px;
   line-height: 50px;
 }
@@ -205,17 +202,16 @@ nav .network li {
 
 /*les 8 autres colonnes*/
 .imgText, .image img {
-  width: 466.66px;
+  width: 33.33333333%;
   margin-bottom: 15px;
+}
+
+.image img {
+  width: 100%;
 }
 
 .text {
   margin: 20px;
-}
-
-.text span {
-  color: #a1a1a1;
-  font-size: 18px;
 }
 
 .text h3 {
@@ -237,7 +233,6 @@ nav .network li {
 .defile {
   background-image: url('images/style-post-union-presents-the-new-collection-sponsored-bg-1125045e.webp');
   background-size: cover;
-  background-repeat: no-repeat;
   justify-content: space-around;
   align-items: center;
   height: 622.7px;
@@ -246,7 +241,6 @@ nav .network li {
 .union {
   background-image: url('images/style-post-union-presents-the-new-collection-sponsored.svg');
   background-size: cover;
-  background-repeat: no-repeat;
   min-height: 390px;
   width: 530px;
 }
@@ -305,18 +299,15 @@ nav .network li {
 
 /*les 8 autres colonnes*/
 .imgText2, .image2 img {
-  width: 406.66px;
-  height: 241.64;
+  width: 33.333333%;
   margin-bottom: 15px;
+}
+.image2 img {
+  width: 100%;
 }
 
 .text2 {
   margin: 20px;
-}
-
-.text2 span {
-  color: #a1a1a1;
-  font-size: 18px;
 }
 
 .text2 h3 {
@@ -395,11 +386,6 @@ nav .network li {
   margin-left: 20px;
 }
 
-.textArticle span {
-  color: #a1a1a1;
-  font-size: 15px;
-}
-
 .textArticle p {
   font-size: 16px;
   font-weight: 500;
@@ -418,21 +404,31 @@ nav .network li {
 .newsletter h2 {
   font-size: 25px;
   line-height: 33px;
-  margin-left: 65px;
+  margin-left: 55px;
 }
 
 form {
   margin-left: 30px;
+  display :flex;
+  flex-flow : row nowrap;
+}
+
+form:hover {
+  cursor:pointer;
+}
+
+input {
+  background-color: transparent;
 }
 
 input[type="email"] {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: rgba(255, 255, 255, 0.7);
-  background-color: transparent;
+  border-bottom-color: #FFFFFFB3;
   width: 740px;
   height: 34px;
+  transition: .2s ease-in-out;
 }
 
 input::placeholder {
@@ -441,10 +437,29 @@ input::placeholder {
   font-size: 17px;
 }
 
-.form img {
-  width: 30px;
+input[type="email"]:focus {
+  outline: none;
+}
+
+input[type="email"]:focus-visible {
+  background-color : #b5d7ee;
+  border: none;
+}
+
+.BtnSubmit  {
+  width: 50px;
   position: relative;
   right: 50px;
+}
+
+.BtnSubmit input {
+  border: none;
+}
+
+.BtnSubmit {
+  background:url("images/envelope-23692.svg");
+  background-repeat: no-repeat;
+
 }
 
 /****Footer****/
