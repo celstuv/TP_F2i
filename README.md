@@ -3,8 +3,7 @@ Projet  :
 Copier un thème dans le cadre du TP HTML/CSS de la formation Chef de projet Digital
 
 Le thème à copier :
-Yoko de Wordpress
-https://demo.yootheme.com/wordpress/themes/yoko/
+Yoko de Wordpress : https://demo.yootheme.com/wordpress/themes/yoko/
 
 Révision des bases abordées :
  - Html5 / CSS3
@@ -15,7 +14,8 @@ Révision des bases abordées :
 -----------------------------------------------------------------------------------------
 Project: Copy a theme for the HTML/CSS course of the Digital Project Manager training
 
-The theme to copy : Yoko from Wordpress
+The theme to copy : 
+Yoko from Wordpress : https://demo.yootheme.com/wordpress/themes/yoko/
 
 Review of the basics covered :
 
