@@ -12,8 +12,20 @@ Révision des bases abordées :
  - Postion relative / absolute
  - Flexbox
 
+-----------------------------------------------------------------------------------------
+Project: Copy a theme for the HTML/CSS course of the Digital Project Manager training
+
+The theme to copy : Yoko from Wordpress
+
+Review of the basics covered :
+
+Html5 / CSS3
+Parent / child
+Relative / absolute position
+Flexbox
+
 Pré-requis :
-Font Montserrat Regular 400 et Medium 500 : https://fonts.google.com/specimen/Montserrat
+
 Documentation :
 https://www.w3schools.com/html/html_forms.asp
 https://www.w3schools.com/html/html_lists.asp
@@ -25,4 +37,4 @@ https://www.w3schools.com/css/css_margin.asp
 https://www.w3schools.com/css/css_padding.asp
 
 
-Voir le résultat : https://celstuv.github.io/html-css/
+Voir le résultat / View result here : https://celstuv.github.io/html-css/
