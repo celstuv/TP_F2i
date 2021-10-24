@@ -8,7 +8,7 @@ Yoko de Wordpress : https://demo.yootheme.com/wordpress/themes/yoko/
 Révision des bases abordées :
  - Html5 / CSS3
  - Parent / enfant
- - Postion relative / absolute
+ - Position relative / absolute
  - Flexbox
 
 -----------------------------------------------------------------------------------------
