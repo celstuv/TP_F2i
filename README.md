@@ -37,4 +37,4 @@ https://www.w3schools.com/css/css_margin.asp
 https://www.w3schools.com/css/css_padding.asp
 
 
-Voir le résultat / View result here : https://celstuv.github.io/html-css/
+Voir le résultat / View result here : https://celstuv.github.io/TP_F2i/
